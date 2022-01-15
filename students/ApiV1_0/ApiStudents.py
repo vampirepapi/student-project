@@ -8,7 +8,7 @@ def insertStudent(self,request,format=None):
 	    student = StudentDetails.objects.create(student_name=request['student_name'])
 	    student.student_class=request['student_class']
 	    student.save()
-	print(student)
+	    print(student)
 
 
 def listStudent(self,request,format=None):

@@ -1,0 +1,8 @@
+List Students:-
+curl -X POST http://127.0.0.1:8000/api/listStudent/ -d '{"ipAddress":"192.168.2.1"}' -H "Content-Type: application/json" | python -m json.tool
+
+Insert Student:-
+curl -X POST http://127.0.0.1:8000/api/insertStudent/ -d '{"ipAddress":"192.168.2.1","student_name":"Avronil","student_class":"10"}' -H "Content-Type: application/json"
+
+Delete Student:-
+curl -X POST http://127.0.0.1:8000/api/deleteStudent/ -d '{"ipAddress":"192.168.2.1","student_id":"5"}' -H "Content-Type: application/json" | python -m json.tool
